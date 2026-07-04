@@ -1,0 +1,25 @@
+/*REQUIRED CSS FOR STUDENT BANNER*/
+.student-banner {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #ffcc00; 
+  color: #1a1a1a; 
+  text-align: center;
+  padding: 10px 20px;
+  font-family: sans-serif;
+  font-size: 14px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  z-index: 99999; 
+}
+
+.student-banner p {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  padding-top: 40px; /* Adjust this number to match the height of your banner */
+}
+/*END OF REQUIRED CSS FOR STUDENT BANNER*/
