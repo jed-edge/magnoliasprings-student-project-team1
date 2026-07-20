@@ -763,3 +763,16 @@ body {
     }
 
 }
+
+.alert {
+    font-size: 1.2em;
+}
+
+/* vendor card styling */
+.food-truck-card {
+            margin: 20px 0;
+        }
+.card-img-top {
+            height: 200px;
+            object-fit: cover;
+        }
