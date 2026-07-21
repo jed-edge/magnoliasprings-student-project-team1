@@ -1,0 +1,168 @@
+<!--Rukayat Adebayo-->
+<!--Amber Barfield-->
+<!--Allyson Yun-->
+<!--Angela Bishop-->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Meet Our Artists | Magnolia Springs Fall Festival</title>
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+        >
+        <link rel="stylesheet" href="css/styles.css">
+    </head>
+    <body>
+        <!-- Required Educational Notice Banner -->
+        <div class="student-banner" role="status" aria-label="Educational Notice">
+            <p><strong>Notice:</strong> This is a fictional student project for educational purposes only.</p>
+        </div><!--End Required Educational Notice Banner -->
+        <header class="site-header">
+            <div class="container">
+                <h1>Magnolia Springs Fall Festival</h1>
+                <p class="header-subtitle">
+                    Two days of music, food, art, vendors, and family fun
+                </p>
+                <nav aria-label="Main navigation">
+                    <ul class="nav-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="vendors.html">Vendors</a></li>
+                        <li><a href="artists.html" aria-current="page">Artists</a></li>
+                        <li><a href="schedule.html">Schedule</a></li>
+                        <li><a href="register.html">Register</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <main>
+            <!-- Hero / Search -->
+            <section class="artists-hero">
+                <div class="container">
+                    <h2>Meet Our Artists</h2>
+                    <p class="artists-intro">
+                        Get to know the musicians and performers bringing Magnolia Springs Fall Festival to life this year. Search by name or genre to find your favorites.
+                    </p>
+                    <div class="artist-search">
+                        <label for="artistSearchInput" class="visually-hidden">Search Artist</label>
+                        <input type="search" id="artistSearchInput" placeholder="Search Artist">
+                        <button type="submit" id="artistSearchButton" aria-label="Search">🔍</button>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Artist Cards -->
+            <section class="artists-showcase">
+                <div class="container">
+                    <div class="artist-grid">
+
+                        <!-- The Autumn Strings -->
+                        <article class="artist-card" data-search="The Autumn Strings String Quartet Saturday Main Stage">
+                            <div class="artist-card-header">
+                                <div class="artist-avatar">A</div>
+                                <div class="artist-card-header-text">
+                                    <span class="artist-label">Artist</span>
+                                    <span class="artist-genre">String Quartet</span>
+                                </div>
+                            </div>
+                            <img src="images/autum-springs.jpg" alt="The Autumn Strings performing">
+                            <div class="artist-card-body">
+                                <h3>The Autumn Strings</h3>
+                                <p class="artist-when-where">Saturday &bull; 2:00 PM &ndash; 3:00 PM &bull; Main Stage</p>
+                                <p class="artist-bio">
+                                    A local string quartet blending classical technique with folk melodies, perfect for a relaxing fall afternoon under the trees.
+                                </p>
+                                <div class="artist-card-actions">
+                                    <a href="schedule.html" class="artist-btn artist-btn-secondary">Schedule</a>
+                                    <a href="#" class="artist-btn artist-btn-primary">Learn More</a>
+                                </div>
+                            </div>
+                        </article>
+
+                        <!-- Harvest Harmony -->
+                        <article class="artist-card" data-search="Harvest Harmony Band Saturday Community Stage">
+                            <div class="artist-card-header">
+                                <div class="artist-avatar">H</div>
+                                <div class="artist-card-header-text">
+                                    <span class="artist-label">Artist</span>
+                                    <span class="artist-genre">Folk Band</span>
+                                </div>
+                            </div>
+                            <img src="images/harvest-harmony.jpg" alt="Harvest Harmony performing">
+                            <div class="artist-card-body">
+                                <h3>Harvest Harmony</h3>
+                                <p class="artist-when-where">Saturday &bull; 4:00 PM &ndash; 5:00 PM &bull; Community Stage</p>
+                                <p class="artist-bio">
+                                    An upbeat local folk band known for lively harmonies and toe-tapping tunes celebrating the spirit of the season.
+                                </p>
+                                <div class="artist-card-actions">
+                                    <a href="schedule.html" class="artist-btn artist-btn-secondary">Schedule</a>
+                                    <a href="#" class="artist-btn artist-btn-primary">Learn More</a>
+                                </div>
+                            </div>
+                        </article>
+
+                        <!-- Southern Echo -->
+                        <article class="artist-card" data-search="Southern Echo Solo Vocalist Sunday Main Stage">
+                            <div class="artist-card-header">
+                                <div class="artist-avatar">S</div>
+                                <div class="artist-card-header-text">
+                                    <span class="artist-label">Artist</span>
+                                    <span class="artist-genre">Acoustic Vocalist</span>
+                                </div>
+                            </div>
+                            <img src="images/southern-echo.jpg" alt="Southern Echo performing">
+                            <div class="artist-card-body">
+                                <h3>Southern Echo</h3>
+                                <p class="artist-when-where">Sunday &bull; 1:00 PM &ndash; 2:00 PM &bull; Main Stage</p>
+                                <p class="artist-bio">
+                                    A soulful acoustic vocalist whose heartfelt songwriting captures the warmth and nostalgia of small-town Southern life.
+                                </p>
+                                <div class="artist-card-actions">
+                                    <a href="schedule.html" class="artist-btn artist-btn-secondary">Schedule</a>
+                                    <a href="#" class="artist-btn artist-btn-primary">Learn More</a>
+                                </div>
+                            </div>
+                        </article>
+
+                    </div>
+                    <p class="artist-empty-message" id="artistEmptyMessage">No artists match your search. Try a different name or genre.</p>
+                </div>
+            </section>
+        </main>
+
+        <footer class="site-footer">
+            <div class="container footer-grid">
+                <div>
+                    <h2>Magnolia Springs Fall Festival</h2>
+                    <p>Celebrating community, creativity, and fall fun.</p>
+                </div>
+                <div>
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="vendors.html">Vendors</a></li>
+                        <li><a href="artists.html">Artists</a></li>
+                        <li><a href="schedule.html">Schedule</a></li>
+                        <li><a href="register.html">Register</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Location</h3>
+                    <p>123 Station Road <br>
+                    Magnolia Springs, Georgia 31125</p>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2024 Magnolia Springs Fall Festival. Fictional website created for educational purposes.</p>
+            </div>
+        </footer>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="js/script.js"></script><!-- Search filtering for Meet the Artists page -->
+    </body>
+</html>
