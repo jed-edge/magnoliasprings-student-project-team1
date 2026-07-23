@@ -24,11 +24,10 @@ body {
 }
 /*END OF REQUIRED CSS FOR STUDENT BANNER*/
 
-/* ===========================
+/*
 
    Magnolia Springs Homepage
-
-=========================== */
+ */
 
 body{
 
@@ -198,11 +197,11 @@ footer{
 
 }
 
-/* =====================================
+/*
 
    Magnolia Springs Homepage Styling
 
-===================================== */
+ */
 
 :root {
 
@@ -763,6 +762,7 @@ body {
     }
 
 }
+ HEAD
 /* =====================================
 
    Contact Page Styling
@@ -1056,3 +1056,414 @@ body {
     }
 
 }
+
+
+.alert {
+    font-size: 1.2em;
+}
+
+/* vendor card styling */
+.food-truck-card {
+            margin: 20px 0;
+        }
+.card-img-top {
+            height: 200px;
+            object-fit: cover;
+        }
+
+.schedule-hero {
+    background-color: var(--cream);
+    text-align: center;
+    padding: 70px 20px;
+}
+
+.schedule-hero h2 {
+    color: var(--navy);
+    font-size: clamp(2rem, 5vw, 3rem);
+    margin-bottom: 25px;
+}
+
+
+
+.title-line {
+    width: 65%;
+    max-width: 700px;
+    height: 18px;
+    background-color: #d9d9d9;
+    border-radius: 30px;
+    margin: 0 auto 35px;
+}
+
+
+
+.schedule-search {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.schedule-search input {
+    width: 550px;
+    max-width: 90%;
+    padding: 14px 20px;
+    border: none;
+    border-radius: 30px 0 0 30px;
+    background: #f2edf8;
+    font-size: 1rem;
+    outline: none;
+}
+
+.schedule-search button {
+    border: none;
+    background: #f2edf8;
+    padding: 14px 20px;
+    border-radius: 0 30px 30px 0;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.schedule-search button:hover {
+    background: #e4ddee;
+}
+
+
+.artist-schedule {
+    background: var(--navy);
+    padding: 70px 0;
+}
+
+.artist-schedule h2 {
+    color: white;
+    text-align: center;
+    margin-bottom: 40px;
+    position: relative;
+}
+
+.artist-schedule h2::after {
+    content: "";
+    display: block;
+    width: 85%;
+    height: 2px;
+    background: rgba(255,255,255,.4);
+    margin: 12px auto 0;
+}
+
+.vendor-schedule {
+    background: var(--coral);
+    padding: 70px 0;
+}
+
+.vendor-schedule h2 {
+    color: white;
+    text-align: center;
+    margin-bottom: 40px;
+    position: relative;
+}
+
+.vendor-schedule h2::after {
+    content: "";
+    display: block;
+    width: 85%;
+    height: 2px;
+    background: rgba(255,255,255,.4);
+    margin: 12px auto 0;
+}
+
+.schedule-card {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    background: white;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 30px;
+    box-shadow: 0 5px 15px rgba(0,0,0,.15);
+}
+
+.schedule-card img {
+    width: 140px;
+    height: 140px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.schedule-info {
+    flex: 1;
+}
+
+.schedule-info h3 {
+    color: var(--navy);
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.schedule-info p {
+    margin-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+
+    .schedule-card {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .schedule-card img {
+        width: 100%;
+        max-width: 250px;
+        height: auto;
+    }
+
+    .schedule-search {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .schedule-search input,
+    .schedule-search button {
+        width: 100%;
+        max-width: 350px;
+        border-radius: 30px;
+    }
+
+}
+
+/* Meet the artists*/
+
+.artists-hero {
+    background-color: var(--cream);
+    text-align: center;
+    padding: 70px 20px 50px;
+}
+
+.artists-hero h2 {
+    color: var(--navy);
+    font-size: clamp(2rem, 5vw, 3rem);
+    margin-bottom: 10px;
+}
+
+.artists-hero .artists-intro {
+    max-width: 650px;
+    margin: 0 auto 30px;
+    color: var(--text);
+    font-size: 1.05rem;
+}
+
+.artist-search {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.artist-search input {
+    width: 550px;
+    max-width: 90%;
+    padding: 14px 20px;
+    border: none;
+    border-radius: 30px 0 0 30px;
+    background: #f2edf8;
+    font-size: 1rem;
+    outline: none;
+}
+
+.artist-search button {
+    border: none;
+    background: #f2edf8;
+    padding: 14px 20px;
+    border-radius: 0 30px 30px 0;
+    cursor: pointer;
+    font-size: 1rem;
+    line-height: 1;
+}
+
+.artist-search button:hover {
+    background: #e4ddee;
+}
+
+/* Showcase section */
+
+.artists-showcase {
+    background-color: var(--navy);
+    padding: 60px 0 70px;
+}
+
+.artist-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+}
+
+.artist-empty-message {
+    color: var(--white);
+    text-align: center;
+    font-size: 1.1rem;
+    padding: 20px;
+    display: none;
+}
+
+/* Artist Card */
+
+.artist-card {
+    background-color: var(--white);
+    border-radius: 14px;
+    overflow: hidden;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, .25);
+    display: flex;
+    flex-direction: column;
+    transition: transform .2s ease, box-shadow .2s ease;
+}
+
+.artist-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 26px rgba(0, 0, 0, .3);
+}
+
+.artist-card-header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 16px 16px 0;
+}
+
+.artist-avatar {
+    flex-shrink: 0;
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    background-color: var(--tan);
+    color: var(--navy);
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.artist-card-header-text {
+    line-height: 1.2;
+}
+
+.artist-card-header-text .artist-label {
+    display: block;
+    font-size: .7rem;
+    letter-spacing: .05em;
+    text-transform: uppercase;
+    color: #8a8a8a;
+}
+
+.artist-card-header-text .artist-genre {
+    font-weight: 600;
+    color: var(--navy);
+}
+
+.artist-card img {
+    width: 100%;
+    height: 210px;
+    object-fit: cover;
+    margin-top: 14px;
+}
+
+.artist-card-body {
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.artist-card-body h3 {
+    margin: 0 0 4px;
+    color: var(--navy);
+    font-size: 1.2rem;
+}
+
+.artist-card-body .artist-when-where {
+    font-size: .85rem;
+    color: #666;
+    margin-bottom: 12px;
+}
+
+.artist-card-body .artist-bio {
+    font-size: .92rem;
+    color: var(--text);
+    flex: 1;
+    margin-bottom: 18px;
+}
+
+.artist-card-actions {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.artist-btn {
+    display: inline-block;
+    text-align: center;
+    padding: 9px 18px;
+    border-radius: 30px;
+    font-size: .85rem;
+    font-weight: 600;
+    text-decoration: none;
+    border: 1px solid transparent;
+    cursor: pointer;
+}
+
+.artist-btn-secondary {
+    background-color: var(--white);
+    border-color: var(--navy);
+    color: var(--navy);
+}
+
+.artist-btn-secondary:hover {
+    background-color: var(--cream);
+}
+
+.artist-btn-primary {
+    background-color: #6f42c1;
+    color: var(--white);
+}
+
+.artist-btn-primary:hover {
+    background-color: #5a34a0;
+    color: var(--white);
+}
+
+@media (max-width: 576px) {
+    .artist-search input,
+    .artist-search button {
+        font-size: .9rem;
+    }
+
+    .artist-card-actions {
+        flex-direction: column;
+    }
+}
+
+/*End Meet the Artists*/
+
+/* Button styles for Visit Truck */
+.visit-truck-btn {
+    opacity: 1;
+    color: #ffffff; /* White text */
+    background-color: rgb(33, 85, 140); /* Custom background color */
+    outline: red dashed 2px; /* Custom outline */
+    border: none; /* Remove default border */
+}
+
+/* Optional: Add hover effect */
+.visit-truck-btn:hover {
+    background-color: rgb(50, 100, 180); /* Darker shade on hover */
+}
+
+/*Button styles for Submit button on Registration form*/
+.submit-btn {
+    opacity: 1;
+    color: #ffffff; /* White text */
+    background-color: rgb(33, 85, 140); /* Custom background color */
+    outline: red dashed 2px; /* Custom outline */
+    border: none; /* Remove default border */
+}
+
+.submit-btn:hover {
+    background-color: rgb(50, 100, 180); /* Darker shade on hover */
+}
+ 
