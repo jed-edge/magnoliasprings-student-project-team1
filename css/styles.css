@@ -1145,3 +1145,30 @@ body {
 }
 
 /*End Meet the Artists*/
+
+/* Button styles for Visit Truck */
+.visit-truck-btn {
+    opacity: 1;
+    color: #ffffff; /* White text */
+    background-color: rgb(33, 85, 140); /* Custom background color */
+    outline: red dashed 2px; /* Custom outline */
+    border: none; /* Remove default border */
+}
+
+/* Optional: Add hover effect */
+.visit-truck-btn:hover {
+    background-color: rgb(50, 100, 180); /* Darker shade on hover */
+}
+
+/*Button styles for Submit button on Registration form*/
+.submit-btn {
+    opacity: 1;
+    color: #ffffff; /* White text */
+    background-color: rgb(33, 85, 140); /* Custom background color */
+    outline: red dashed 2px; /* Custom outline */
+    border: none; /* Remove default border */
+}
+
+.submit-btn:hover {
+    background-color: rgb(50, 100, 180); /* Darker shade on hover */
+}
