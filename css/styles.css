@@ -1467,3 +1467,8 @@ body {
     background-color: rgb(50, 100, 180); /* Darker shade on hover */
 }
  
+
+/* Added to address accessibility errors */
+.vendorScheduleH2Dark{ 
+    color: #031D44 !important; 
+}

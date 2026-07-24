@@ -63,7 +63,8 @@
                 <h2>Artist & Vendor Schedule</h2>
                 <div class="title-line"></div>
                 <div class="schedule-search">
-                    <input type="search" placeholder="Search Schedule">
+                    <label for = "Search Schedule">Search Schedule</label> <!--Added to remove accessibility error.-->
+                    <input type="search" placeholder="Search Schedule" name ="Search Schedule" id = "Search Schedule">
                     <button type="submit">🔍</button>
                 </div>
             </div>
@@ -123,7 +124,7 @@
         </section>
         <section class="vendor-schedule">
             <div class="container">
-                <h2>Vendor Schedule</h2>
+                <h2 class = "vendorScheduleH2Dark">Vendor Schedule</h2>
                 <article class="schedule-card">
                     <img src="images/autumn-craft.jpg" alt="Vendor booth">
                     <div class="schedule-info">
