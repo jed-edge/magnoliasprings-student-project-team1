@@ -1445,7 +1445,7 @@ body {
     opacity: 1;
     color: #ffffff; /* White text */
     background-color: rgb(33, 85, 140); /* Custom background color */
-    outline: red dashed 2px; /* Custom outline */
+    /*outline: red dashed 2px; (Disabled by changing this into a comment by Ally because it doesn't match color scheme or design of site. You can change it back if you want, and I made sure not to delete your CSS if you did it like that for a reason.)*/ /*Custom outline*/ 
     border: none; /* Remove default border */
 }
 
